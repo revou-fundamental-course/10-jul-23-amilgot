@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator BMI for Your Health</title>
+    <link rel="stylesheet" href=".css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator BMI</h1>
+        <form>
+            <p><strong>Jenis Kelamin</strong></p>
+            <p>
+                <span>
+                    <input type="radio" id="Pria" name="gender" value="Pria"
+                           checked>
+                    <label for="Pria"><strong>Pria</strong></label>
+                </span>
+                <span>
+                    <input type="radio" id="Wanita" name="gender" value="Wanita">
+                    <label for="Wanita"><strong>Wanita</strong></label>
+                </span>
+            </p>
+        <p><label>Tinggi Badan (cm): </label><input type="number" id="tb"></p>
+        <p><label>Berat Badan (kg): </label><input type="number" id="bb"></p>
+        <button>Hitung</button>
+        <div id="results"></div>
+        <div id="bb-guide">
+        <h3>Keterangan Hasil BMI</h3>
+        <p>Berat Badan Kurang = kurang dari 18.5</p>
+        <p>Berat Badan Normal = 18.5 dan 24.9</p>
+        <p>Kelebihan Berat Badan = lebih dari 24.9</p>
+        </div>
+        </form>
+        </div>
+</body>
+<script src=".js/script.js"></script>
+</html>
